@@ -1,2 +1,2 @@
 # dotfiles
-Dotfiles for my GNU/Linux setup
+Dotfiles for my GNU+Linux setup
