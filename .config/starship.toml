@@ -1,0 +1,32 @@
+add_newline = false
+
+format = """
+$username[@](bold white)$hostname$directory$character
+"""
+
+[line_break]
+disabled = true
+
+[character]
+format = "$symbol "
+success_symbol = "[>](bold white)"
+error_symbol = "[>](bold white)"
+
+[username]
+show_always = true
+style_user = "white"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+format = "[$hostname]($style)"
+style = "white"
+
+[directory]
+style = "white"
+read_only = "(Read-Only) "
+read_only_style = "bold red"
+format = ":[$path]($style) [$read_only]($read_only_style)"
+truncate_to_repo = false
+truncation_length = 5
+truncation_symbol = "…/"
